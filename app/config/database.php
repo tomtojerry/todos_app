@@ -8,12 +8,3 @@ define('PASS', 'daiki');
 // $user = 'daiki';
 // $pass = 'daiki';
 
-try {
-
-    $dbh = new PDO(DSN, USER, PASS);
-    echo '接続成功' . PHP_EOL;
-} catch (PDOException $e) {
-
-    echo '接続失敗 : ' . $e->getMessage() . PHP_EOL;
-    die();
-}
